@@ -13,19 +13,30 @@ const Prodotti = () => {
 
     return (
         <>
-            <div>
-                <MainNavbar />
-                <h2>Lista dei prodotti</h2>
-            </div>
+            <MainNavbar />
+            <h2>Lista dei prodotti</h2>
+
             {prodotti === null ? (<div>Caricamento...</div>) : (
-                <div className="row">
+                <div className="container">
                     {prodotti.map((prodotto) => {
                         return (
-                            <div className="div" key={prodotto.id}>
-                                <img src={prodotto.image} alt="" />
-                                <h3>{prodotto.title}</h3>
-                                <p>{prodotto.price}</p>
-                                <p>{prodotto.description}</p>
+                            <div className="none" key={prodotto.id}>
+                                <div className="card">
+                                    <div className="card-image">
+                                        <img src={prodotto.image} alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <div className="card-title">
+                                            <h3>{prodotto.title}</h3>
+                                        </div>
+                                        <div className="card-price">
+                                            <p>{prodotto.price}</p>
+                                        </div>
+                                        <div className="card-description">
+                                            <p>{prodotto.description}</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         );
                     })}

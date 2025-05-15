@@ -6,7 +6,7 @@ const links = [
     },
     {
         path: '/chisiamo',
-        label: 'Chisiamo',
+        label: 'Chi Siamo',
     },
     {
         path: '/prodotti',
