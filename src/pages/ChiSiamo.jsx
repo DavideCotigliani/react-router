@@ -1,8 +1,10 @@
+import MainNavbar from "../components/MainNavbar"
 
 const ChiSiamo = () => {
     return (
         <div>
-            <h1>ChiSiamo</h1>
+            <MainNavbar />
+            <h1>Un'azienda che vende prodotti</h1>
         </div>
     )
 }

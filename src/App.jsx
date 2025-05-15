@@ -6,7 +6,6 @@ import Prodotti from './pages/Prodotti'
 
 function App() {
 
-
   return (
     <>
       <BrowserRouter>
