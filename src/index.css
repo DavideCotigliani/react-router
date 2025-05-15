@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    padding: 15px;
+    font-size: 25px;
+    margin-left: 20%;
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.custom-link {
+    color: darkred;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.custom-link:hover {
+    font-weight: 700;
+    color: black;
+}
+
+.custom-link.active {
+    font-weight: 700;
+    color: black;
+}

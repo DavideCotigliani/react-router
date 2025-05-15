@@ -6,9 +6,9 @@ const MainNavbar = () => {
             <header>
                 <nav>
                     <ul>
-                        <NavLink to="/">HomePage</NavLink>
-                        <NavLink to="/chisiamo">Chi Siamo</NavLink>
-                        <NavLink to="/prodotti">Prodotti</NavLink>
+                        <li><NavLink className="custom-link" to="/">HomePage</NavLink></li>
+                        <li><NavLink className="custom-link" to="/chisiamo">Chi Siamo</NavLink></li>
+                        <li><NavLink className="custom-link" to="/prodotti">Prodotti</NavLink></li>
                     </ul>
                 </nav>
             </header>

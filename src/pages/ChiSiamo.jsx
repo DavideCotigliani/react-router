@@ -4,7 +4,7 @@ const ChiSiamo = () => {
     return (
         <div>
             <MainNavbar />
-            <h1>Un'azienda che vende prodotti</h1>
+            <h1>Azienda che vende prodotti</h1>
         </div>
     )
 }
