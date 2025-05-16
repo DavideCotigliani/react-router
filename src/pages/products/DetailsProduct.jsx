@@ -10,8 +10,6 @@ const DetailsProduct = () => {
 
     // definisco il metodo navigate
     const navigate = useNavigate();
-    console.log(navigate);
-
 
     // definisco la variabile di stato che conterrà il prodotto
     const [product, setProduct] = useState({});
@@ -24,7 +22,7 @@ const DetailsProduct = () => {
     }
     useEffect(() => {
         getSingleProduct();
-    }, [])
+    }, [id])
 
     return (
         <div>
@@ -39,9 +37,13 @@ const DetailsProduct = () => {
                 </div>
             </div>
             <button onClick={() => {
-                navigate(-1);
-            }}>Torna indietro</button>
-        </div>
+                navigate(`/prodotti/${parseInt(id) - 1}`);
+            }}
+                disabled={id == 1 ? true : false}>Torna indietro</button>
+            <button onClick={() => {
+                navigate(`/prodotti/${parseInt(id) + 1}`);
+            }}>Vai avanti</button>
+        </div >
     )
 }
 
