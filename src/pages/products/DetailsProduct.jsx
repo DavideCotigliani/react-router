@@ -29,10 +29,22 @@ const DetailsProduct = () => {
             <h1>Dettaglio prodotto</h1>
             <div className="container">
                 <div className="row">
-                    <div className="col-2">
-                        <h1>{product.title}</h1>
-                        <span><em>{product.category}</em></span>
-                        <p>{product.description}</p>
+                    <div className="col-12">
+                        <div className="single-card d-flex">
+                            <div className="card-image">
+                                <img src={product.image} alt="" />
+                            </div>
+                            <div className="card-body bg-light">
+                                <div className="single-card-title">
+                                    <span><em>{product.category}</em></span>
+                                    <h2>{product.title}</h2>
+                                </div>
+                                <div className=" single-card-description">
+                                    <p>{product.description}</p>
+                                    <p>{product.price}€</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
